@@ -2,33 +2,32 @@
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <Extern href="stdidcmd.h"/>
   <Extern href="vsshlids.h"/>
-  <Commands package="guidUpdatePackage">
-
+  <Commands package="guidUpdateCommandPackage">
     <Groups>
-      <Group guid="guidUpdatePackageCmdSet" id="MyMenuGroup" priority="0x0600">
+      <Group guid="guidUpdateCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE"/>
       </Group>
     </Groups>
-
     <Buttons>
-      <Button guid="guidUpdatePackageCmdSet" id="UpdateId" priority="0x0100" type="Button">
-        <Parent guid="guidUpdatePackageCmdSet" id="MyMenuGroup" />
+      <Button guid="guidUpdateCommandPackageCmdSet" id="UpdateCommandId" priority="0x0100" type="Button">
+        <Parent guid="guidUpdateCommandPackageCmdSet" id="MyMenuGroup" />
         <Icon guid="guidImages" id="bmpPic1" />
         <Strings>
           <ButtonText>Get Update-Database Script</ButtonText>
         </Strings>
       </Button>
     </Buttons>
-
   </Commands>
 
   <Symbols>
-    <GuidSymbol name="guidUpdatePackage" value="{7cb73c5f-4f0e-4a0b-817b-e76ea5992222}" />
-    <GuidSymbol name="guidUpdatePackageCmdSet" value="{404cc6cd-c069-4edc-ac4c-3aa80af6354d}">
+    <GuidSymbol name="guidUpdateCommandPackage" value="{b0f0513d-caf6-4962-9011-63235a271131}" />
+
+    <GuidSymbol name="guidUpdateCommandPackageCmdSet" value="{0eadfacd-2154-4b4a-98f4-b7b401549556}">
       <IDSymbol name="MyMenuGroup" value="0x1020" />
-      <IDSymbol name="UpdateId" value="0x0100" />
+      <IDSymbol name="UpdateCommandId" value="0x0100" />
     </GuidSymbol>
-    <GuidSymbol name="guidImages" value="{758fd70b-8b71-4fcf-b65c-3e609d4e6e08}" >
+
+    <GuidSymbol name="guidImages" value="{8948d419-3f3e-4321-8013-340dce351ec6}" >
       <IDSymbol name="bmpPic1" value="1" />
       <IDSymbol name="bmpPic2" value="2" />
       <IDSymbol name="bmpPicSearch" value="3" />
